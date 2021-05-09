@@ -4,7 +4,9 @@
 
 - Metrics Explorer is a tag-based tool that allows the filter, aggregate, and visualize the metrics by tags and resource properties to enrich observability for the services. 
 
-- Metrics Explorer charts are dynamic, so if a matching resource is deployed after creating a metrics explorer widget and add it to a CloudWatch dashboard, the new resource automatically appears in the explorer widget
+- Metrics Explorer provides a flexible troubleshooting experience, allowing to build the tag-based application health dashboards, identify correlations, and quickly analyse the operational data to pinpoint issues
+
+- Metrics Explorer enables you to slice and dice metrics using existing AWS Resource Tags or using EC2 and Lambda resource properties as Tags. You can aggregate metrics by resource properties such as for instance type and visualize one graph per Availability Zone or organize metrics on one or multiple graphs by splitting them based on tags. 
 
 -  In this tutorial, we will focus on first creating a Metrics Explorer and then publishing it to a Dashboards
 
