@@ -2,11 +2,11 @@
 
 **Introduction**
 
-- Metrics Explorer is a tag-based tool that allows the filter, aggregate, and visualize the metrics by tags and resource properties to enrich observability for the services. 
+- Cloudwatch Metrics Explorer provides a flexible troubleshooting experience, allowing to build the tag-based application health dashboards, identify correlations, and quickly analyse the operational data to pinpoint issues
 
-- Metrics Explorer provides a flexible troubleshooting experience, allowing to build the tag-based application health dashboards, identify correlations, and quickly analyse the operational data to pinpoint issues
+- Cloudwatch Metrics Explorer enables you to slice and dice metrics using existing AWS Resource Tags or using EC2 and Lambda resource properties as Tags. You can aggregate metrics by resource properties such as for instance type and visualize one graph per Availability Zone or organize metrics on one or multiple graphs by splitting them based on tags. 
 
-- Metrics Explorer enables you to slice and dice metrics using existing AWS Resource Tags or using EC2 and Lambda resource properties as Tags. You can aggregate metrics by resource properties such as for instance type and visualize one graph per Availability Zone or organize metrics on one or multiple graphs by splitting them based on tags. 
+- Cloudwatch Metrics Explorer is a tag-based tool that allows the filter, aggregate, and visualize the metrics by tags and resource properties to enrich observability for the services. 
 
 -  In this tutorial, we will focus on first creating a Metrics Explorer and then publishing it to a Dashboards
 
@@ -38,9 +38,9 @@
 
 - **Step 2: Publishing to Dashboards**
    
-   1. Select Add to Dashboard button in the top right corner  
+   1. Click Add to Dashboard button in the top right corner  
    
-   2. Click Create new, then enter ECS-demo-dashboard as the dashboard name and click Create dashboard
+   2. Select Create new, provide name to the dashboard and click Create dashboard
    
       <img src="images/image6.png" class="inline"/> 
        
