@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## AWS Cloudwatch Metrics Explorer
 
-You can use the [editor on GitHub](https://github.com/sanchitdilipjain/aws-cloudwatch-metrics-explorer/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+**Introduction**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Metrics Explorer is a tag-based tool that allows the filter, aggregate, and visualize the metrics by tags and resource properties to enrich observability for the services. 
 
-### Markdown
+- Metrics Explorer charts are dynamic, so if a matching resource is deployed after creating a metrics explorer widget and add it to a CloudWatch dashboard, the new resource automatically appears in the explorer widget
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-  In this tutorial, we will focus on first creating a Metrics Explorer and then publishing it to a Dashboards
 
-```markdown
-Syntax highlighted code block
+- **Step 1: Creating a Cloudwatch metrics explorer**
 
-# Header 1
-## Header 2
-### Header 3
+   1. Traverse to the <a href="https://console.aws.amazon.com/cloudwatch/">CloudWatch</a> click Explorer under Metrics
+   
+      <img src="images/image1.png" class="inline"/> 
+   
+      The screen should look similar to the screenshot shown below
+      
+      <img src="images/image2.png" class="inline"/> 
+   
+   2.  Metrics Explorer offers to pick from Generic Templates (Lambda and EC2) or Service Based Templates, where we can select the metric we want to add to a dashboard based on the service selected. Also, we can choose a custom time range to display the chosen metrics, or select the default range from 1h-1w
+   
+       <img src="images/image3.png" class="inline"/> 
+   
+   3.  Select on the drop-down which says Empty Explorer and select the lambda by runtime generic template
+   
+       <img src="images/image4.png" class="inline"/> 
+   
+   4.  Select ECS from the drop-down and provide 1w in the top right
+   
+   5.  Under the From the search bar, select All values( * ), then click Services.
+   
+       The screen should look similar to the screenshot below
+       
+       <img src="images/image5.png" class="inline"/> 
 
-- Bulleted
-- List
+- **Step 2: Publishing to Dashboards**
+   
+   1. Select Add to Dashboard button in the top right corner  
+   
+   2. Click Create new, then enter ECS-demo-dashboard as the dashboard name and click Create dashboard
+   
+      <img src="images/image6.png" class="inline"/> 
+       
+      <img src="images/image7.png" class="inline"/> 
+   
+   3. Click the Explorer widget, then click create
+   
+      <img src="images/image8.png" class="inline"/> 
+      
+      <img src="images/image9.png" class="inline"/> 
+   
+   4. Along with simple simple dashboard publish, we can also perform complex operation like Replay Dashboard, Share Dashboard, etc.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sanchitdilipjain/aws-cloudwatch-metrics-explorer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+      <img src="images/image10.png" class="inline"/> 
